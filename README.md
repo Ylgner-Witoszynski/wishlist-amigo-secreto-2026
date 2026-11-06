@@ -13,7 +13,7 @@ A versão alternativa abre em `/`. A versão editorial original abre em `/versao
 
 ## Conteúdo
 
-Os 11 produtos, links externos e textos alternativos ficam em `src/data.js`. As fotos usadas na página estão em `public/images/products` e também estão referenciadas no catálogo estático de `index.html`, para manter as imagens e os links disponíveis quando o JavaScript não carregar.
+Os 10 produtos, links externos e textos alternativos ficam em `src/data.js`. As fotos usadas na página estão em `public/images/products` e também estão referenciadas no catálogo estático de `index.html`, para manter as imagens e os links disponíveis quando o JavaScript não carregar.
 
 Os cartões usam carregamento tardio de imagens e dimensões reservadas. GSAP/ScrollTrigger cuida das animações de entrada e Lenis do scroll suave, com suporte a `prefers-reduced-motion`.
 

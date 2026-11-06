@@ -17,7 +17,7 @@ function AlternativeCard({ product, category }) {
     <article className="alt-product" data-alt-card>
       <a className={`alt-product__image alt-product__image--${product.imageFit}`} href={product.url} target="_blank" rel="noopener noreferrer" aria-label={`Abrir ${product.title} no site de origem`}>
         <img src={product.image} alt={product.alt} width="1200" height="1300" loading="lazy" decoding="async" />
-        <span className="alt-product__id mono">{product.id}<span> / 11</span></span>
+        <span className="alt-product__id mono">{product.id}<span> / 10</span></span>
         <span className="alt-product__note">{product.note}</span>
         <span className="alt-product__external" aria-hidden="true"><ArrowUpRight size={17} strokeWidth={1.5} /></span>
       </a>
@@ -73,18 +73,18 @@ function AlternativePage() {
 
       <main>
         <section className="alt-hero" id="topo" aria-labelledby="alt-title">
-          <div className="alt-hero__index mono"><span>AMIGO SECRETO</span><span>EDIÇÃO 2026 · 11 PEÇAS</span></div>
+          <div className="alt-hero__index mono"><span>AMIGO SECRETO</span><span>EDIÇÃO 2026 · 10 PEÇAS</span></div>
           <div className="alt-hero__layout">
             <div className="alt-hero__copy">
               <p className="alt-hero__kicker mono"><span className="alt-live-dot" /> LISTA DE DESEJOS / 001</p>
               <h1 id="alt-title"><span className="alt-hero__line"><span>Minha</span></span><span className="alt-hero__line alt-hero__line--last"><span>Wishlist<span className="alt-lime">.</span></span></span></h1>
               <p className="alt-hero__sub">Pequenas coisas que fariam meu amigo secreto ainda mais especial.</p>
-              <a className="alt-hero__cta" href="#colecao"><span>Explorar os 11 itens</span><ArrowRight size={18} /></a>
+              <a className="alt-hero__cta" href="#colecao"><span>Explorar os 10 itens</span><ArrowRight size={18} /></a>
             </div>
             <div className="alt-hero__visual">
               <div className="alt-hero__image"><img src="./images/products/kaiak-masculino.jpg" alt="Frasco do perfume Kaiak Masculino, 100 ml" width="1200" height="1200" fetchPriority="high" /></div>
               <div className="alt-hero__sticker" aria-hidden="true"><span>feito</span><span>para</span><b>surpreender</b><i>✳</i></div>
-              <div className="alt-hero__caption mono"><span>OBJETO Nº 09</span><span>FRESCO / AQUÁTICO</span></div>
+              <div className="alt-hero__caption mono"><span>OBJETO Nº 08</span><span>FRESCO / AQUÁTICO</span></div>
             </div>
           </div>
           <a className="alt-scroll mono" href="#colecao"><span>DESÇA PARA DESCOBRIR</span><ArrowDownRight size={16} /></a>
@@ -94,14 +94,14 @@ function AlternativePage() {
         <section className="alt-manifesto" aria-label="Sobre a wishlist">
           <span className="mono">NOTA 01 — UMA LISTA PESSOAL</span>
           <p className="alt-manifesto__text alt-reveal">Uma coleção pequena de <em>coisas boas</em> — para deixar a escolha mais fácil e a surpresa mais gostosa.</p>
-          <div className="alt-manifesto__side mono"><span>11 OBJETOS</span><span>04 CAPÍTULOS</span><span>2026</span></div>
+          <div className="alt-manifesto__side mono"><span>10 OBJETOS</span><span>04 CAPÍTULOS</span><span>2026</span></div>
         </section>
 
         <section className="alt-collection" id="colecao" aria-labelledby="alt-collection-title">
           <div className="alt-collection__intro alt-reveal">
             <span className="mono">02 — A SELEÇÃO</span>
             <h2 id="alt-collection-title">Coisas que<br /><em>fazem sentido.</em></h2>
-            <p>Quatro capítulos, onze vontades e um presente escolhido com carinho.</p>
+            <p>Quatro capítulos, dez vontades e um presente escolhido com carinho.</p>
           </div>
           {categories.map((category) => {
             const Icon = categoryIcons[category.icon];
@@ -124,7 +124,7 @@ function AlternativePage() {
         </section>
 
         <footer className="alt-footer">
-          <div className="alt-footer__top mono"><span>FIM DA LISTA / 11 DE 11</span><a href="#topo">VOLTAR AO TOPO <ArrowUpRight size={14} /></a></div>
+          <div className="alt-footer__top mono"><span>FIM DA LISTA / 10 DE 10</span><a href="#topo">VOLTAR AO TOPO <ArrowUpRight size={14} /></a></div>
           <p className="mono">COM CARINHO, SEMPRE.</p>
           <h2 className="alt-footer__title">Obrigado por fazer<br />parte <em>desse momento.</em></h2>
           <div className="alt-footer__bottom"><p>Uma pequena seleção de coisas que eu adoraria receber neste amigo secreto.</p><span>Wishlist <i>—</i> 2026</span><b aria-hidden="true">✳</b></div>
