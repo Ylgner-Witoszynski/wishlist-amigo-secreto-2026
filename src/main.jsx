@@ -54,7 +54,7 @@ function ProductCard({ product }) {
           onLoad={() => setImageReady(true)}
         />
         <div className="product-card__image-shade" aria-hidden="true" />
-        <span className="product-card__index">{product.id} <span>/ 10</span></span>
+        <span className="product-card__index">{product.id} <span>/ 11</span></span>
         <span className="product-card__note">{product.note}</span>
         <span className="product-card__corner" aria-hidden="true"><ArrowUpRight size={18} strokeWidth={1.3} /></span>
       </a>
@@ -101,7 +101,7 @@ function Catalog({ activeCategory, setActiveCategory }) {
         <div className="catalog__intro-label reveal-on-scroll">
           <span className="eyebrow">A seleção · 2026</span>
           <span className="catalog__rule" aria-hidden="true" />
-          <span className="mono">10 objetos / 04 capítulos</span>
+          <span className="mono">11 objetos / 04 capítulos</span>
         </div>
         <div className="catalog__intro-copy">
           <p className="eyebrow reveal-on-scroll">Uma coleção pessoal</p>
@@ -109,7 +109,7 @@ function Catalog({ activeCategory, setActiveCategory }) {
           <p className="catalog__intro-text reveal-on-scroll">Algumas coisas que me fazem bem — reunidas aqui, com carinho e sem pressa.</p>
         </div>
         <div className="catalog__filter" role="group" aria-label="Filtrar por categoria">
-          <button className={activeCategory === "all" ? "is-active" : ""} onClick={() => setActiveCategory("all")} aria-pressed={activeCategory === "all"}>Tudo <span>10</span></button>
+          <button className={activeCategory === "all" ? "is-active" : ""} onClick={() => setActiveCategory("all")} aria-pressed={activeCategory === "all"}>Tudo <span>11</span></button>
           {categories.map((category) => {
             const count = products.filter((item) => item.category === category.id).length;
             return <button key={category.id} className={activeCategory === category.id ? "is-active" : ""} onClick={() => setActiveCategory(category.id)} aria-pressed={activeCategory === category.id}>{category.label} <span>{String(count).padStart(2, "0")}</span></button>;
@@ -132,6 +132,11 @@ function Catalog({ activeCategory, setActiveCategory }) {
               <p className="chapter__note">{category.note}</p>
               <span className="chapter__count mono">{String(sectionProducts.length).padStart(2, "0")} peças</span>
             </div>
+            {category.id === "academia" && <aside className="product-combo" aria-label="Sugestão de combo: Termogênico Abelhinha e Diuretik Black">
+              <span className="product-combo__index mono">01 + 02</span>
+              <div className="product-combo__copy"><p className="eyebrow">Sugestão de combo</p><h4>Abelhinha + Diuretik Black</h4><p>Quero receber os dois juntos, formando um combo.</p></div>
+              <span className="product-combo__asterisk" aria-hidden="true">✳</span>
+            </aside>}
             <div className={`product-grid ${sectionProducts.length === 2 ? "product-grid--two" : ""} ${sectionIndex % 2 ? "product-grid--offset" : ""}`}>
               {sectionProducts.map((product) => <ProductCard key={product.id} product={product} />)}
             </div>
@@ -199,7 +204,7 @@ function App() {
             <span className="hero-art__vertical mono">COLEÇÃO PESSOAL · 2026</span>
           </div>
 
-          <div className="hero__edition mono">10 itens <span>·</span> 4 capítulos</div>
+          <div className="hero__edition mono">11 itens <span>·</span> 4 capítulos</div>
           <a className="hero__scroll mono" href="#catalogo"><span>Deslize para descobrir</span><span className="hero__scroll-track"><ArrowDown size={15} strokeWidth={1.3} /></span></a>
           <span className="hero__cross hero__cross--a" aria-hidden="true">+</span>
           <span className="hero__cross hero__cross--b" aria-hidden="true">+</span>
