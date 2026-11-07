@@ -22,8 +22,8 @@ export const products = [
     url: "https://www.mercadolivre.com.br/up/MLBU793545513?pdp_filters=item_id:MLB1981641218&matt_tool=38524122#origin=share&sid=share&wid=MLB1981641218&action=copy",
   },
   {
-    id: "04", category: "desenho", title: "Canetas Sakura Pigma Micron", description: "Kit de seis pontas para desenho técnico e ilustração.",
-    image: "./images/products/canetas-sakura-pigma-micron.webp", alt: "Kit de canetas pretas Sakura Pigma Micron em seis traços", tone: "ink", imageFit: "contain", note: "para dar forma",
+    id: "04", category: "desenho", title: "Borracha de precisão Tombow Mono Zero", description: "Ponta fina para apagar pequenos detalhes com precisão.",
+    image: "./images/products/borracha-tombow-mono-zero.jpg", alt: "Borracha Tombow Mono Zero de precisão com ponta de 2,3 milímetros", tone: "ink", imageFit: "contain", note: "para refinar",
     url: "https://www.mercadolivre.com.br/up/MLBU733030908?pdp_filters=item_id:MLB1530736113&matt_tool=38524122#origin=share&sid=share&wid=MLB1530736113&action=copy",
   },
   {

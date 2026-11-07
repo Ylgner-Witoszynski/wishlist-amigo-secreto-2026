@@ -128,6 +128,11 @@ function AlternativePage() {
                   <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">SUGESTÃO DE COMBO</span><h3><span>Abelhinha</span><i>+</i><span>Diuretik Black</span></h3><p>Quero receber os dois juntos, formando um combo.</p></div>
                   <span className="alt-combo__asterisk" aria-hidden="true">✳</span>
                 </aside>}
+                {category.id === "desenho" && <aside className="alt-combo alt-reveal" aria-label="Sugestão de combo: Kit de desenho Faber-Castell 9000 e borracha Tombow Mono Zero">
+                  <span className="alt-combo__index mono">03 <i>+</i> 04</span>
+                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">SUGESTÃO DE COMBO</span><h3><span>Kit Faber-Castell 9000</span><i>+</i><span>Tombow Mono Zero</span></h3><p>Quero receber os dois juntos para criar e refinar cada detalhe.</p></div>
+                  <span className="alt-combo__asterisk" aria-hidden="true">✳</span>
+                </aside>}
                 <div className={`alt-category__grid alt-category__grid--${categoryProducts.length}`}>
                   {categoryProducts.map((product) => <AlternativeCard key={product.id} product={product} category={category} />)}
                 </div>
