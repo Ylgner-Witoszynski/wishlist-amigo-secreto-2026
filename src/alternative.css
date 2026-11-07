@@ -41,7 +41,7 @@ button { font: inherit; }
 .alt-version svg, .alt-footer__top a svg { transition: transform .25s ease; }
 .alt-version:hover svg, .alt-footer__top a:hover svg { transform: translate(3px, -3px); }
 
-.alt-hero { position: relative; max-width: var(--alt-content); min-height: min(850px, calc(100svh - 76px)); margin: 0 auto; padding: 36px var(--alt-gutter) 74px; border-bottom: 1px solid var(--alt-line); isolation: isolate; }
+.alt-hero { position: relative; max-width: var(--alt-content); min-height: min(850px, calc(100svh - 76px)); margin: 0 auto; padding: 36px var(--alt-gutter) 74px; border-bottom: 1px solid var(--alt-line); scroll-margin-top: 84px; isolation: isolate; }
 .alt-hero::before { position: absolute; z-index: -1; inset: 0; background-image: linear-gradient(rgba(37,39,31,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(37,39,31,.035) 1px, transparent 1px); background-size: 8.333% 100%; content: ""; mask-image: linear-gradient(90deg, black, transparent 90%); }
 .alt-hero::after { position: absolute; z-index: -1; top: 9%; right: 4%; width: clamp(300px, 38vw, 560px); aspect-ratio: 1; border: 1px solid rgba(41,55,47,.11); border-radius: 50%; box-shadow: 0 0 0 2.8vw rgba(41,55,47,.025), 0 0 0 5.6vw rgba(41,55,47,.02); content: ""; pointer-events: none; }
 .alt-hero__index { display: flex; justify-content: space-between; gap: 20px; color: var(--alt-muted); font-size: 8px; }
@@ -84,7 +84,7 @@ button { font: inherit; }
 .alt-manifesto__text em { color: var(--alt-clay); font-family: var(--alt-serif); font-size: 1.12em; font-weight: 500; font-style: italic; letter-spacing: -.04em; }
 .alt-manifesto__side { display: flex; flex-direction: column; gap: 12px; justify-self: end; color: var(--alt-muted); font-size: 8px; }
 
-.alt-collection { max-width: var(--alt-content); margin: auto; padding: clamp(90px, 11vw, 155px) var(--alt-gutter) 90px; }
+.alt-collection { max-width: var(--alt-content); margin: auto; padding: clamp(90px, 11vw, 155px) var(--alt-gutter) 90px; scroll-margin-top: 84px; }
 .alt-collection__intro { display: grid; grid-template-columns: .8fr 1.45fr 1fr; align-items: start; gap: 3vw; padding-bottom: 76px; }
 .alt-collection__intro > .mono { padding-top: 14px; color: var(--alt-clay); font-size: 8px; }
 .alt-collection__intro h2 { margin: 0; font-size: clamp(52px, 6.7vw, 96px); font-weight: 600; line-height: .91; letter-spacing: -.095em; }
@@ -183,7 +183,7 @@ button { font: inherit; }
   .alt-nav a { flex: none; font-size: 7px; }
   .alt-nav a span { font-size: 9px; }
   .alt-version { grid-column: 2; grid-row: 1; }
-  .alt-hero { min-height: max(850px, calc(100svh - 93px)); padding-top: 25px; padding-bottom: 66px; }
+  .alt-hero { min-height: max(850px, calc(100svh - 93px)); padding-top: 25px; padding-bottom: 66px; scroll-margin-top: 96px; }
   .alt-hero::after { top: 37%; right: -10%; width: 82vw; }
   .alt-hero__index { font-size: 7px; }
   .alt-hero__layout { display: block; margin-top: 38px; }
@@ -206,7 +206,7 @@ button { font: inherit; }
   .alt-manifesto > .mono { grid-column: 1 / -1; font-size: 7px; }
   .alt-manifesto__text { font-size: clamp(36px, 9vw, 57px); }
   .alt-manifesto__side { gap: 9px; align-self: end; font-size: 7px; }
-  .alt-collection { padding-top: 84px; padding-bottom: 45px; }
+  .alt-collection { padding-top: 84px; padding-bottom: 45px; scroll-margin-top: 112px; }
   .alt-collection__intro { display: flex; flex-direction: column; gap: 25px; padding-bottom: 57px; }
   .alt-collection__intro > .mono { padding-top: 0; font-size: 7px; }
   .alt-collection__intro h2 { font-size: clamp(56px, 14.7vw, 78px); }
