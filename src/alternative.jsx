@@ -4,7 +4,9 @@ import { Activity, ArrowDownRight, ArrowRight, ArrowUpRight, Clock3, Pencil, Spa
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { LazyMotion, MotionConfig, domAnimation, m } from "motion/react";
 import { categories, products } from "./data";
+import { AnimeOrbit, FooterSparkle, HeroDepthObject, SmoothScroll, SpringPieceCount } from "./visual-enhancements";
 import "./alternative.css";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -61,7 +63,10 @@ function AlternativePage() {
   }, { scope: pageRef });
 
   return (
+    <MotionConfig reducedMotion="user">
+      <LazyMotion features={domAnimation}>
     <div className="alt-site" ref={pageRef}>
+      <SmoothScroll />
       <div className="alt-progress" aria-hidden="true" />
       <header className="alt-header">
         <a className="alt-mark" href="#topo" aria-label="Wishlist — voltar ao início"><span>W</span><small>arquivo pessoal</small></a>
@@ -73,16 +78,18 @@ function AlternativePage() {
 
       <main>
         <section className="alt-hero" id="topo" aria-labelledby="alt-title">
-          <div className="alt-hero__index mono"><span>AMIGO SECRETO</span><span>EDIÇÃO 2026 · 11 PEÇAS</span></div>
+          <div className="alt-hero__index mono"><span>AMIGO SECRETO</span><span>EDIÇÃO 2026 · <SpringPieceCount /> PEÇAS</span></div>
           <div className="alt-hero__layout">
             <div className="alt-hero__copy">
               <p className="alt-hero__kicker mono"><span className="alt-live-dot" /> LISTA DE DESEJOS / 001</p>
               <h1 id="alt-title"><span className="alt-hero__line"><span>Minha</span></span><span className="alt-hero__line alt-hero__line--last"><span>Wishlist<span className="alt-lime">.</span></span></span></h1>
               <p className="alt-hero__sub">Pequenas coisas que fariam meu amigo secreto ainda mais especial.</p>
-              <a className="alt-hero__cta" href="#colecao"><span>Explorar os 11 itens</span><ArrowRight size={18} /></a>
+              <a className="alt-hero__cta" href="#colecao"><span>Explorar os 11 itens</span><m.span whileHover={{ x: 4 }} whileTap={{ x: 1 }} transition={{ duration: 0.2 }}><ArrowRight size={18} /></m.span></a>
             </div>
             <div className="alt-hero__visual">
               <div className="alt-hero__image"><img src="./images/products/kaiak-masculino.jpg" alt="Frasco do perfume Kaiak Masculino, 100 ml" width="1200" height="1200" fetchPriority="high" /></div>
+              <HeroDepthObject />
+              <AnimeOrbit />
               <div className="alt-hero__sticker" aria-hidden="true"><span>feito</span><span>para</span><b>surpreender</b><i>✳</i></div>
               <div className="alt-hero__caption mono"><span>OBJETO Nº 09</span><span>FRESCO / AQUÁTICO</span></div>
             </div>
@@ -132,10 +139,12 @@ function AlternativePage() {
           <div className="alt-footer__top mono"><span>FIM DA LISTA / 11 DE 11</span><a href="#topo">VOLTAR AO TOPO <ArrowUpRight size={14} /></a></div>
           <p className="mono">COM CARINHO, SEMPRE.</p>
           <h2 className="alt-footer__title">Obrigado por fazer<br />parte <em>desse momento.</em></h2>
-          <div className="alt-footer__bottom"><p>Uma pequena seleção de coisas que eu adoraria receber neste amigo secreto.</p><span>Wishlist <i>—</i> 2026</span><b aria-hidden="true">✳</b></div>
+          <div className="alt-footer__bottom"><p>Uma pequena seleção de coisas que eu adoraria receber neste amigo secreto.</p><span>Wishlist <i>—</i> 2026</span><FooterSparkle /></div>
         </footer>
       </main>
     </div>
+      </LazyMotion>
+    </MotionConfig>
   );
 }
 
