@@ -17,13 +17,13 @@ export const products = [
     url: "https://www.oficialfarma.com.br/diuretik-black",
   },
   {
-    id: "03", category: "desenho", title: "Kit de desenho Faber-Castell 9000", description: "Oito lápis de diferentes graduações e duas borrachas Dust Free.",
-    image: "./images/products/kit-lapis-faber-castell.webp", alt: "Kit de desenho com lápis Faber-Castell 9000 e borrachas", tone: "paper", imageFit: "contain", note: "para esboçar",
+    id: "03", category: "desenho", title: "Kit de desenho Faber-Castell 9000", description: "Parte do combo de desenho que eu gostaria de receber junto da borracha Tombow Mono Zero.",
+    image: "./images/products/kit-lapis-faber-castell.webp", alt: "Kit de desenho com lápis Faber-Castell 9000 e borrachas", tone: "paper", imageFit: "contain", note: "parte do combo",
     url: "https://www.mercadolivre.com.br/up/MLBU793545513?pdp_filters=item_id:MLB1981641218&matt_tool=38524122#origin=share&sid=share&wid=MLB1981641218&action=copy",
   },
   {
-    id: "04", category: "desenho", title: "Borracha de precisão Tombow Mono Zero", description: "Ponta fina para apagar pequenos detalhes com precisão.",
-    image: "./images/products/borracha-tombow-mono-zero.jpg", alt: "Borracha Tombow Mono Zero de precisão com ponta de 2,3 milímetros", tone: "ink", imageFit: "contain", note: "para refinar",
+    id: "04", category: "desenho", title: "Borracha de precisão Tombow Mono Zero", description: "Parte do combo de desenho que eu gostaria de receber junto do kit Faber-Castell 9000.",
+    image: "./images/products/borracha-tombow-mono-zero.jpg", alt: "Borracha Tombow Mono Zero de precisão com ponta de 2,3 milímetros", tone: "ink", imageFit: "contain", note: "parte do combo",
     url: "https://www.mercadolivre.com.br/up/MLBU733030908?pdp_filters=item_id:MLB1530736113&matt_tool=38524122#origin=share&sid=share&wid=MLB1530736113&action=copy",
   },
   {

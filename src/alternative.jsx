@@ -123,14 +123,14 @@ function AlternativePage() {
                   <span className="alt-category__count mono">{String(categoryProducts.length).padStart(2, "0")} ITENS</span>
                   <span className="alt-category__rule" aria-hidden="true" />
                 </header>
-                {category.id === "academia" && <aside className="alt-combo alt-reveal" aria-label="Sugestão de combo: Termogênico Abelhinha e Diuretik Black">
+                {category.id === "academia" && <aside className="alt-combo alt-reveal" aria-label="Combo de academia: Termogênico Abelhinha e Diuretik Black, receber os dois itens juntos">
                   <span className="alt-combo__index mono">01 <i>+</i> 02</span>
-                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">SUGESTÃO DE COMBO</span><h3><span>Abelhinha</span><i>+</i><span>Diuretik Black</span></h3><p>Quero receber os dois juntos, formando um combo.</p></div>
+                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">COMBO · OS DOIS ITENS JUNTOS</span><h3><span>Abelhinha</span><i>+</i><span>Diuretik Black</span></h3><p>Quero receber os dois produtos deste combo.</p></div>
                   <span className="alt-combo__asterisk" aria-hidden="true">✳</span>
                 </aside>}
-                {category.id === "desenho" && <aside className="alt-combo alt-reveal" aria-label="Sugestão de combo: Kit de desenho Faber-Castell 9000 e borracha Tombow Mono Zero">
+                {category.id === "desenho" && <aside className="alt-combo alt-reveal" aria-label="Combo de desenho: Kit Faber-Castell 9000 e borracha Tombow Mono Zero, receber os dois itens juntos">
                   <span className="alt-combo__index mono">03 <i>+</i> 04</span>
-                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">SUGESTÃO DE COMBO</span><h3><span>Kit Faber-Castell 9000</span><i>+</i><span>Tombow Mono Zero</span></h3><p>Quero receber os dois juntos para criar e refinar cada detalhe.</p></div>
+                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">COMBO DE DESENHO · OS DOIS ITENS</span><h3><span>Kit Faber-Castell 9000</span><i>+</i><span>Tombow Mono Zero</span></h3><p>Quero receber os dois materiais juntos neste combo.</p></div>
                   <span className="alt-combo__asterisk" aria-hidden="true">✳</span>
                 </aside>}
                 <div className={`alt-category__grid alt-category__grid--${categoryProducts.length}`}>
