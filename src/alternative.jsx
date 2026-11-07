@@ -45,7 +45,7 @@ function AlternativePage() {
     intro.fromTo(".alt-header, .alt-hero__index", { y: -12, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.55, stagger: 0.08 }, 0)
       .fromTo(".alt-hero__line span", { yPercent: 112, rotate: 2 }, { yPercent: 0, rotate: 0, duration: 0.9, stagger: 0.1, ease: "power4.out" }, 0.1)
       .fromTo(".alt-hero__sub, .alt-hero__cta", { y: 18, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.1 }, 0.5)
-      .fromTo(".alt-hero__image", { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 0% 0)", duration: 1, ease: "power3.inOut" }, 0.2)
+      .fromTo(".alt-hero__image", { clipPath: "inset(0 0 100% 0 round 48% 48% 2px 2px)" }, { clipPath: "inset(0 0 0% 0 round 48% 48% 2px 2px)", duration: 1, ease: "power3.inOut" }, 0.2)
       .fromTo(".alt-hero__sticker", { scale: 0.75, rotate: 18, autoAlpha: 0 }, { scale: 1, rotate: -8, autoAlpha: 1, duration: 0.55 }, 0.95);
 
     gsap.to(".alt-progress", { scaleX: 1, ease: "none", scrollTrigger: { trigger: document.documentElement, start: "top top", end: "bottom bottom", scrub: 0.2 } });
@@ -60,6 +60,7 @@ function AlternativePage() {
     });
     gsap.utils.toArray(".alt-category__rule", pageRef.current).forEach((rule) => gsap.fromTo(rule, { scaleX: 0, transformOrigin: "left" }, { scaleX: 1, duration: 0.8, ease: "power2.inOut", scrollTrigger: { trigger: rule, start: "top 92%", once: true } }));
     gsap.fromTo(".alt-footer__title", { y: 22, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.8, scrollTrigger: { trigger: ".alt-footer", start: "top 78%", once: true } });
+    gsap.to(".alt-hero__image img", { yPercent: 4, ease: "none", scrollTrigger: { trigger: ".alt-hero", start: "top top", end: "bottom top", scrub: true } });
   }, { scope: pageRef });
 
   return (
@@ -124,7 +125,7 @@ function AlternativePage() {
                 </header>
                 {category.id === "academia" && <aside className="alt-combo alt-reveal" aria-label="Sugestão de combo: Termogênico Abelhinha e Diuretik Black">
                   <span className="alt-combo__index mono">01 <i>+</i> 02</span>
-                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">SUGESTÃO DE COMBO</span><h3>Abelhinha <i>+</i> Diuretik Black</h3><p>Quero receber os dois juntos, formando um combo.</p></div>
+                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">SUGESTÃO DE COMBO</span><h3><span>Abelhinha</span><i>+</i><span>Diuretik Black</span></h3><p>Quero receber os dois juntos, formando um combo.</p></div>
                   <span className="alt-combo__asterisk" aria-hidden="true">✳</span>
                 </aside>}
                 <div className={`alt-category__grid alt-category__grid--${categoryProducts.length}`}>

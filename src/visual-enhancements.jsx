@@ -108,7 +108,7 @@ export function HeroDepthObject() {
         renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: "low-power" });
         renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
         geometry = new THREE.IcosahedronGeometry(0.88, 1);
-        material = new THREE.MeshBasicMaterial({ color: 0xd9ff57, wireframe: true, transparent: true, opacity: 0.78 });
+        material = new THREE.MeshBasicMaterial({ color: 0x777d5b, wireframe: true, transparent: true, opacity: 0.68 });
         mesh = new THREE.Mesh(geometry, material);
         mesh.rotation.set(0.24, 0.52, -0.1);
         scene.add(mesh);
@@ -210,7 +210,7 @@ const sparkleAnimation = {
       nm: "Star",
       it: [
         { ind: 0, ty: "sh", ix: 1, ks: { a: 0, k: { i: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]], o: [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0]], v: [[0, -42], [9, -9], [42, 0], [9, 9], [0, 42], [-9, 9], [-42, 0], [-9, -9]], c: true } }, nm: "Star path" },
-        { ty: "fl", c: { a: 0, k: [0.851, 1, 0.341, 1] }, o: { a: 0, k: 100 }, r: 1, bm: 0, nm: "Lime fill" },
+        { ty: "fl", c: { a: 0, k: [0.788, 0.78, 0.478, 1] }, o: { a: 0, k: 100 }, r: 1, bm: 0, nm: "Olive fill" },
         { ty: "tr", p: { a: 0, k: [60, 60, 0] }, a: { a: 0, k: [0, 0, 0] }, s: { a: 0, k: [100, 100, 100] }, r: { a: 0, k: 0 }, o: { a: 0, k: 100 }, sk: { a: 0, k: 0 }, sa: { a: 0, k: 0 }, nm: "Transform" },
       ],
     }],
