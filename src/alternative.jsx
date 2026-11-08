@@ -128,9 +128,9 @@ function AlternativePage() {
                   <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">COMBO · OS DOIS ITENS JUNTOS</span><h3><span>Abelhinha</span><i>+</i><span>Diuretik Black</span></h3><p>Quero receber os dois produtos deste combo.</p></div>
                   <span className="alt-combo__asterisk" aria-hidden="true">✳</span>
                 </aside>}
-                {category.id === "desenho" && <aside className="alt-combo alt-reveal" aria-label="Combo de desenho: Kit Faber-Castell 9000 e borracha Tombow Mono Zero, receber os dois itens juntos">
+                {category.id === "desenho" && <aside className="alt-combo alt-reveal" aria-label="Combo de desenho: Kit Faber-Castell 9000 e canetas Sakura Pigma Micron, receber os dois itens juntos">
                   <span className="alt-combo__index mono">03 <i>+</i> 04</span>
-                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">COMBO DE DESENHO · OS DOIS ITENS</span><h3><span>Kit Faber-Castell 9000</span><i>+</i><span>Tombow Mono Zero</span></h3><p>Quero receber os dois materiais juntos neste combo.</p></div>
+                  <div className="alt-combo__copy"><span className="alt-combo__eyebrow mono">COMBO DE DESENHO · OS DOIS ITENS</span><h3><span>Kit Faber-Castell 9000</span><i>+</i><span>Sakura Pigma Micron</span></h3><p>Quero receber os dois materiais juntos neste combo.</p></div>
                   <span className="alt-combo__asterisk" aria-hidden="true">✳</span>
                 </aside>}
                 <div className={`alt-category__grid alt-category__grid--${categoryProducts.length}`}>
